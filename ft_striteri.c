@@ -6,7 +6,7 @@
 /*   By: vcastilh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 09:07:28 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/09/02 13:47:50 by vcastilh         ###   ########.fr       */
+/*   Updated: 2021/09/04 09:58:17 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t	s_len;
+	size_t			s_len;
 	unsigned int	i;
 
 	s_len = ft_strlen(s);
