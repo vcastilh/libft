@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vcastilh <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 10:09:46 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/09/04 10:30:59 by vcastilh         ###   ########.fr       */
+/*   Updated: 2021/09/04 12:23:00 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	ft_putnbr_fd(int n, int fd)
 		nb = n;
 	if (nb >= 10)
 		ft_putnbr_fd(nb / 10, fd);
-	ft_putnbr_fd((nb % 10) + '0', fd);
+	ft_putchar_fd((nb % 10) + '0', fd);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vcastilh <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vcastilh <vcastilh@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/30 11:30:13 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/08/30 14:32:31 by vcastilh         ###   ########.fr       */
+/*   Created: 2021/09/04 11:59:08 by vcastilh          #+#    #+#             */
+/*   Updated: 2021/09/04 12:01:52 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * res);
 }
-
-/*int	main(void)
-{
-	char n[] = "-5678";
-	int	result;
-
-	result = ft_atoi(n);
-	printf("Valor: %d\n", result);
-	return (0);
-}*/
