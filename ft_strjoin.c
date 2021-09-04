@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vcastilh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/23 10:00:33 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/09/03 23:50:50 by vcastilh         ###   ########.fr       */
+/*   Created: 2021/09/01 07:30:15 by vcastilh          #+#    #+#             */
+/*   Updated: 2021/09/01 07:56:02 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	char	*join;
+
+	join = malloc(((ft_strlen(s1) + ft_strlen(s2)) + 1) * sizeof(char));
+	if (! join)
+		return (NULL);
+	ft_strlcpy(join, s1, ft_strlen(s1) + 1);
+	ft_strlcat(join, s2, ft_strlen(s1) + ft_strlen(s2) + 1);
+	return (join);
 }
