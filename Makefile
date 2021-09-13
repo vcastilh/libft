@@ -6,7 +6,7 @@
 #    By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 10:20:32 by vcastilh          #+#    #+#              #
-#    Updated: 2021/09/04 13:36:10 by vcastilh         ###   ########.fr        #
+#    Updated: 2021/09/10 12:26:53 by vcastilh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,7 @@ FILES = ft_isalpha.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_strmapi.c \
+		ft_split.c \
 
 OBJFILES = $(FILES:%.c=%.o)
 
@@ -60,7 +61,7 @@ $(OBJFILES): $(FILES)
 clean:
 	rm -f $(OBJFILES)
 
-fclean: clean
+fclean: clean 
 	rm -f $(NAME)
 
 re: fclean all
