@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 10:11:59 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/09/01 23:56:21 by vcastilh         ###   ########.fr       */
+/*   Updated: 2021/09/13 08:45:49 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,8 @@ char	*ft_itoa(int n)
 	if (n >= 0)
 	{
 		str = malloc((len + 1) * sizeof(char));
+		if (!str)
+			return (NULL);
 		str[len] = '\0';
 		while (len)
 		{
@@ -74,6 +76,8 @@ char	*ft_itoa(int n)
 	else
 	{
 		str = malloc((len + 2) * sizeof(char));
+		if (!str)
+			return (NULL);
 		ft_min_itoa(str, n, len);
 	}
 	return (str);
