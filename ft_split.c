@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 20:09:11 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/09/04 09:26:23 by vcastilh         ###   ########.fr       */
+/*   Updated: 2021/09/14 08:13:50 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ static size_t	ft_count_words(char const *s, char c)
 	return (n);
 }
 
-static char	**ft_get_words(char const *s, char c, size_t n_words, char **arr)
+static char	**ft_get_words(char const *s, char c, size_t num_words, char **arr)
 {
 	size_t	i;
 	size_t	j;
 
 	j = 0;
-	while (n_words--)
+	while (num_words--)
 	{
 		i = 0;
 		while (*s == c)
@@ -63,13 +63,13 @@ static char	**ft_get_words(char const *s, char c, size_t n_words, char **arr)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	n_words;
+	size_t	num_words;
 	char	**arr;
 
-	n_words = ft_count_words(s, c);
-	arr = (char **)malloc((n_words + 1) * sizeof(char *));
+	num_words = ft_count_words(s, c);
+	arr = (char **)malloc((num_words + 1) * sizeof(char *));
 	if (!arr)
 		return (NULL);
-	arr = ft_get_words(s, c, n_words, arr);
+	arr = ft_get_words(s, c, num_words, arr);
 	return (arr);
 }
