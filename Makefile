@@ -6,7 +6,7 @@
 #    By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 10:20:32 by vcastilh          #+#    #+#              #
-#    Updated: 2021/09/10 12:26:53 by vcastilh         ###   ########.fr        #
+#    Updated: 2022/02/09 15:50:47 by vcastilh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,7 @@ FILES = ft_isalpha.c \
 		ft_putnbr_fd.c \
 		ft_strmapi.c \
 		ft_split.c \
+		ft_get_next_line.c \
 
 OBJFILES = $(FILES:%.c=%.o)
 
