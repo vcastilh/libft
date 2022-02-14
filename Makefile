@@ -6,13 +6,13 @@
 #    By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 10:20:32 by vcastilh          #+#    #+#              #
-#    Updated: 2022/02/09 15:50:47 by vcastilh         ###   ########.fr        #
+#    Updated: 2022/02/14 11:32:55 by vcastilh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CFLAGS = -Wall -Werror -Wextra -I. -c
-CC = clang
+CC = gcc 
 FILES = ft_isalpha.c \
 		ft_isdigit.c \
 		ft_isalnum.c \
@@ -48,6 +48,7 @@ FILES = ft_isalpha.c \
 		ft_strmapi.c \
 		ft_split.c \
 		ft_get_next_line.c \
+		ft_atold.c \
 
 OBJFILES = $(FILES:%.c=%.o)
 
