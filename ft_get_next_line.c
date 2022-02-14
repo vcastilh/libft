@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/01 11:15:53 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/10/01 14:45:46 by vcastilh         ###   ########.fr       */
+/*   Updated: 2022/02/10 11:12:08 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_bonus.h"
+#include "libft.h"
 
 char	*get_line(char	**buffer_backup, char	*ptr_n)
 {
@@ -76,7 +76,7 @@ char	*read_file(int fd, char	*buffer, char **buffer_backup)
 	return (get_line(buffer_backup, ft_strchr(*buffer_backup, '\n')));
 }
 
-char	*get_next_line(int fd)
+char	*ft_get_next_line(int fd)
 {
 	char		*buffer;
 	static char	*buffer_backup[LIMIT_FD];
