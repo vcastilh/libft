@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 10:00:40 by vcastilh          #+#    #+#             */
-/*   Updated: 2022/02/19 09:43:16 by vcastilh         ###   ########.fr       */
+/*   Updated: 2022/02/19 11:11:09 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ long double	ft_atold(const char *nptr)
 
 	res = 0;
 	decimal = 0.1;
-	sign = ft_check_sign(nptr);
+	sign = ft_check_sign(nptr++);
 	while (*nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
 		nptr++;
 	while (ft_isdigit(*nptr))
