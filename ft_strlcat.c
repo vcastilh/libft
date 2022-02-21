@@ -6,11 +6,12 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 14:53:32 by vcastilh          #+#    #+#             */
-/*   Updated: 2021/09/04 00:15:00 by vcastilh         ###   ########.fr       */
+/*   Updated: 2022/02/21 04:57:20 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	dst_len;
