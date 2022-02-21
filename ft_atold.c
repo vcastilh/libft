@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 10:00:40 by vcastilh          #+#    #+#             */
-/*   Updated: 2022/02/21 08:29:12 by vcastilh         ###   ########.fr       */
+/*   Updated: 2022/02/21 08:43:15 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,13 @@ long double	ft_atold(const char *nptr)
 	while (ft_isdigit(*nptr))
 	{
 		res = (res * 10.0) + *nptr++ - '0';
-		nptr++;
-	}
-	if (*nptr++ == '.')
-	{
-		while (ft_isdigit(*nptr))
+		if (*nptr++ == '.')
 		{
-			res += (*nptr++ - '0') * decimal;
-			decimal *= 0.1;
+			while (ft_isdigit(*nptr))
+			{
+				res += (*nptr++ - '0') * decimal;
+				decimal *= 0.1;
+			}
 		}
 	}
 	return (sign * res);
