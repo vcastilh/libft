@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 08:15:25 by vcastilh          #+#    #+#             */
-/*   Updated: 2022/03/17 14:37:33 by vcastilh         ###   ########.fr       */
+/*   Updated: 2022/03/17 14:58:14 by vcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 char	*ft_getenv(char *name, char **envp)
 {
-	size_t	i;
-
-	i = 0;
-	if (name == NULL | envp == NULL)
+	if ((name == NULL) | (envp == NULL))
 		return (NULL);
 	while (envp)
 	{
