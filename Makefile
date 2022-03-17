@@ -6,7 +6,7 @@
 #    By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 10:20:32 by vcastilh          #+#    #+#              #
-#    Updated: 2022/02/14 11:32:55 by vcastilh         ###   ########.fr        #
+#    Updated: 2022/03/17 14:53:55 by vcastilh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,7 @@ FILES = ft_isalpha.c \
 		ft_split.c \
 		ft_get_next_line.c \
 		ft_atold.c \
+		ft_getenv.c \
 
 OBJFILES = $(FILES:%.c=%.o)
 
