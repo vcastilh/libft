@@ -23,9 +23,9 @@ int	main(void)
 	char	*s_upper;
 
 	s = "hello world";
-	s_len = ft_strlen(s);
+	s_len = ft_strlen(s) + 1;
 	s_upper = ft_calloc(s_len, sizeof(char));
-	while(s_len--)
+	while(--s_len)
 	{
 		*s_upper = ft_toupper(*s);
 		write(1, s_upper, 1);
