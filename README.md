@@ -85,6 +85,7 @@ ft_tolower | Convert a lower-case letter to corresponding upper-case letter.
 
 | | String |
 --- | --- |
+ft_strlen | The strlen() function computes the length of the string s.
 ft_strchr | The strchr() function locates the first occurrence of the character c (converted to a char) in the string s. The terminating NUL character is considered part of the string. If c is ‘\0’, strchr() locates the terminating ‘\0’.<Paste>
 ft_strrchr | The strrchr() function locates the last occurrence of the character c (converted to a char) in the string s. The terminating NUL character is considered part of the string. If c is ‘\0’, strrchr() locates the terminating ‘\0’.
 ft_strncmp | Compare the NUL-terminated strings s1 and s2, at most len characters.
