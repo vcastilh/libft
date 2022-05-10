@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 08:15:25 by vcastilh          #+#    #+#             */
-/*   Updated: 2022/03/17 14:58:14 by vcastilh         ###   ########.fr       */
+/*   Updated: 2022/05/10 16:12:27 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,22 @@
 
 char	*ft_getenv(char *name, char **envp)
 {
+	int	i;
+	int	j;
+
 	if ((name == NULL) | (envp == NULL))
 		return (NULL);
-	while (envp)
+	i = 0;
+	j = 0;
+	while (envp[i])
 	{
-		if (!ft_strncmp(name, *envp, ft_strlen(name)))
+		if (!ft_strncmp(name, envp[i], ft_strlen(name)))
 		{
-			*envp += ft_strlen(name);
-			return (*envp + 1);
+			j = i + ft_strlen(name) + 1;
+			return (&(envp[i][j]));
 		}
 		else
-			envp++;
+			i++;
 	}
 	return (NULL);
 }
