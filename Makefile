@@ -6,12 +6,12 @@
 #    By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 10:20:32 by vcastilh          #+#    #+#              #
-#    Updated: 2022/03/17 14:53:55 by vcastilh         ###   ########.fr        #
+#    Updated: 2022/07/15 14:58:14 by coder            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-CFLAGS = -Wall -Werror -Wextra -I. -c
+CFLAGS = -Wall -Werror -Wextra -I. -c -g3
 CC = gcc 
 FILES = ft_isalpha.c \
 		ft_isdigit.c \
@@ -51,9 +51,17 @@ FILES = ft_isalpha.c \
 		ft_atold.c \
 		ft_getenv.c \
 
+BONUSFILES = ft_lstnew.c \
+
+
 OBJFILES = $(FILES:%.c=%.o)
+OBJBONUSFILES = $(BONUSFILES:%.c=%.o)
 
 all: $(NAME)
+
+#Está com relink
+bonus: all $(OBJBONUSFILES)
+	ar rcs $(NAME) $(OBJBONUSFILES)
 
 $(NAME): $(OBJFILES)
 	ar rcs $@ $^

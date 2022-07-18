@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/23 08:47:36 by vcastilh          #+#    #+#             */
-/*   Updated: 2022/03/17 08:32:21 by vcastilh         ###   ########.fr       */
+/*   Updated: 2022/07/15 14:36:38 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,12 @@
 # ifndef LIMIT_FD
 #  define LIMIT_FD 256
 # endif
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
@@ -58,4 +64,5 @@ char		**ft_split(char const *s, char c);
 char		*ft_get_next_line(int fd);
 long double	ft_atold(const char *nptr);
 char		*ft_getenv(char *name, char **envp);
+t_list		*ft_lstnew(void	*content);
 #endif
