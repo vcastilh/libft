@@ -6,7 +6,7 @@
 /*   By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/23 08:47:36 by vcastilh          #+#    #+#             */
-/*   Updated: 2022/07/15 14:36:38 by coder            ###   ########.fr       */
+/*   Updated: 2022/07/18 14:38:00 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,5 @@ char		*ft_get_next_line(int fd);
 long double	ft_atold(const char *nptr);
 char		*ft_getenv(char *name, char **envp);
 t_list		*ft_lstnew(void	*content);
+void		ft_lstadd_front(t_list **lst, t_list *new_node);
 #endif
