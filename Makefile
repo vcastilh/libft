@@ -6,7 +6,7 @@
 #    By: vcastilh <vcastilh@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/18 10:20:32 by vcastilh          #+#    #+#              #
-#    Updated: 2022/07/19 14:49:53 by coder            ###   ########.fr        #
+#    Updated: 2022/07/20 03:25:59 by coder            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,6 +58,7 @@ BONUSFILES = ft_lstnew.c \
 			 ft_lstadd_back.c \
 			 ft_lstdelone.c \
 			 ft_lstclear.c \
+			 ft_lstiter.c \
 
 
 OBJFILES = $(FILES:%.c=%.o)
